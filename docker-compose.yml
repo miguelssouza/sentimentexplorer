@@ -1,0 +1,30 @@
+services:
+    api:
+        container_name: sentiment_api
+        image: sentiment_api_image
+        build:
+            context: .
+            dockerfile: Dockerfile.api
+        command: bash -c 'cd /app && poetry run uvicorn app:app --host 0.0.0.0 --port 8000'
+        mem_limit: 0.5g
+        ports:
+          - "8000:8000"
+        restart: always
+
+    app:
+        container_name: sentiment_app
+        image: sentiment_app_image
+        depends_on:
+          - api
+        build:
+            context: .
+            dockerfile: Dockerfile.app
+        volumes:
+          - ./app:/app
+        
+        ports:
+          - "8501:8501"
+
+        command: bash -c 'cd /app && poetry run streamlit run app.py'
+        mem_limit: 0.5g
+        restart: always

@@ -1,0 +1,34 @@
+[project]
+name = "seniment-analysis-api"
+version = "0.1.0"
+description = "News Sentiment Analysis API (AI)."
+authors = [
+    {name = "miguel.s.souza"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
+    "transformers (>=4.51.3,<5.0.0)",
+    "numpy (>=2.2.5,<3.0.0)",
+    "torch (>=2.7.0,<3.0.0)",
+    "pydantic (>=2.11.4,<3.0.0)",
+    "uvicorn (>=0.34.2,<0.35.0)",
+    "scipy (>=1.15.2,<2.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "duckdb (>=1.2.2,<2.0.0)",
+    "plotly (>=6.0.1,<7.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "pytest (>=8.3.5,<9.0.0)",
+]
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+numpy = "^2.2.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
