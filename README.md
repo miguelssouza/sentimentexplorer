@@ -47,7 +47,7 @@ Este projeto utiliza técnicas avançadas de **Processamento de Linguagem Natura
 ## ✨ Funcionalidades
 
 - ➕ Adição dinâmica de temas para análise
-- 📊 Visualização dos resultados em tabela e TreeMap
+- 📊 Visualização dos resultados em tabela.
 - 📰 Análise de sentimento baseada em notícias dos últimos 7 dias
 - 💻 Interface moderna e responsiva
 - 🐳 Deploy via Docker Compose (API + App)
