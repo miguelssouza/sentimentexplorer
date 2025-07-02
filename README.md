@@ -20,8 +20,6 @@
     <img src="./static/img/home.png" alt="AI-Powered Sentiment Explorer Logo" width="800"/>
 </p>
 
-# 🚀 AI-Powered Sentiment Explorer
-
 ## 📚 Sumário
 
 - [🧠 Sobre a Tecnologia](#-sobre-a-tecnologia)
@@ -39,6 +37,10 @@
 ---
 
 ## 🧠 Sobre a Tecnologia
+
+<p align="center">
+    <img src="./static/img/explorer_image.png" alt="Visual de apresentação do projeto AI-Powered Sentiment Explorer: interface moderna com elementos de inteligência artificial, gráfico de sentimentos, palavras-chave e destaque para tecnologias como Python, FastAPI e Streamlit" width="300"/>
+</p>
 
 Este projeto utiliza técnicas avançadas de **Processamento de Linguagem Natural (NLP)** para analisar automaticamente o sentimento de textos extraídos de notícias. O NLP permite identificar emoções, opiniões e tendências em grandes volumes de dados, fornecendo insights rápidos e precisos sobre qualquer tema escolhido pelo usuário.
 
